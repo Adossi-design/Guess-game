@@ -25,7 +25,7 @@ def guess_game():
             print(f"Hi Dear {user_name}! You chose medium level!")
             max_attempt = 7
         elif user_level == 3:
-            print(f"Hi Dear {user_name}! You chose difficulty level!")
+            print(f"Hi Dear {user_name}! You chose difficult level!")
             max_attempt = 5
         else:
             print("Choose a number between 1 - 3")
@@ -35,7 +35,7 @@ def guess_game():
 
         warning_attempt = max_attempt - attempt - 1
         try:
-            user_answer = int(input("\nEnter randomly one number in your choice\n>>> "))
+            user_answer = int(input("\nEnter randomly a number between 1 - 100 of your choice\n>>> "))
         except ValueError as e:
             print(f"Error! {e}")
             print("You are only allowed to enter a number!")
